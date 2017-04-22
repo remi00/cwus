@@ -1,0 +1,17 @@
+GET http://localhost:3000/weather/94016
+accept: application/json
+
+###
+
+POST http://localhost:3000/weather
+accept: application/json
+content-type: application/json
+
+{
+    "zips": [ 94016, 10001, 60007 ]
+}
+
+###
+
+GET http://localhost:3000/cities
+

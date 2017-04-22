@@ -1,0 +1,6 @@
+[
+    { "zip": 10001, "name": "New York", "state": "New York", "thumbnail": "/static/nyc.jpg" },
+    { "zip": 94016, "name": "San Francisco", "state": "California", "thumbnail": "/static/sanfrancisco.jpg" },
+    { "zip": 90001, "name": "Los Angeles", "state": "California", "thumbnail": "/static/losangeles.jpg" },
+    { "zip": 60007, "name": "Chicago", "state": "Illinois", "thumbnail": "/static/chicago.jpg" }
+]

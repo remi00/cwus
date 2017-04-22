@@ -1,0 +1,19 @@
+GET https://api.login.yahoo.com/oauth2/request_auth?client_id=dj0yJmk9cEk5cHRrSklhV1liJmQ9WVdrOWVFcHJWWFptTkdrbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1hZA--&redirect_uri=oob&response_type=code
+
+###
+
+GET https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%20in%20(select%20woeid%20from%20geo.places(1)%20where%20text%3D%22new%20york%2C%20new%20york%22)&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys
+
+
+###
+
+POST https://api.login.yahoo.com/oauth2/get_token
+Content-Type: application/x-www-form-urlencoded
+
+client_id=dj0yJmk9M1BhWDAwZ1RmRXV2JmQ9WVdrOWVrNDBlRUkxTkhFbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD1mNg--&client_secret=5e22fc831030a524989d441656b866274ae852cf&grant_type=authorization_code&redirect_uri=https%3A%2F%2Fwww.example.com&code=abcdef
+
+###
+
+GET https://api.gemini.yahoo.com/v2/rest/dictionary/woeid?location=01067&type=zip
+Accept: application/json
+Authorization: Basic ZGoweUptazlNMUJoV0RBd1oxUm1SWFYySm1ROVdWZHJPV1ZyTkRCbFJVa3hUa2hGYldOSGJ6bE5RUzB0Sm5NOVkyOXVjM1Z0WlhKelpXTnlaWFFtZUQxbU5nLS06NWUyMmZjODMxMDMwYTUyNDk4OWQ0NDE2NTZiODY2Mjc0YWU4NTJjZg==
