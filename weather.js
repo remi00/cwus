@@ -10,7 +10,7 @@ const get = async (city) => {
     query: {
       format: 'json',
       end: 'store://datatables.org/alltableswithkeys',
-      q: `select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="${city}")`,
+      q: `select * from weather.forecast where woeid in (select woeid from geo.places(1) where text="${city.name}, ${city.state}")`,
     },
   });
   try {
