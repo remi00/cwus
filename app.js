@@ -13,6 +13,7 @@ app.use(cors());
 app.get('/cities', (req, res) => {
   res.json(cities.all());
 });
+
 app.get('/cities/:zip', (req, res) => {
   const requestedCity = cities.byZip(req.params.zip);
   if (!requestedCity || !requestedCity.name || !requestedCity.state) {
@@ -59,3 +60,4 @@ app.listen(port, () => {
   console.log(`Users service running at http://localhost:${port}/`);
 });
 
+module.exports = app;

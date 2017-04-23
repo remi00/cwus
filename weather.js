@@ -3,6 +3,10 @@ const request = require('request-promise-native');
 const util = require('util');
 
 const get = async (city) => {
+  if (!city || !city.name || !city.state) {
+    return false;
+  }
+
   const weatherUrl = url.format({
     protocol: 'https:',
     host: 'query.yahooapis.com',
